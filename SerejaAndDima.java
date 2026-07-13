@@ -40,6 +40,7 @@ public class SerejaAndDima {
             i++;
         }
         System.out.println(sum1 + " " + sum2);
+        sc.close();
 
     }
 }
