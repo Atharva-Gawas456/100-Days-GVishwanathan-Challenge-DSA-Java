@@ -15,14 +15,19 @@ public class AliceBobC {
         int left = 0;
         int right = n - 1;
 
-        int sum1 = 0;
-        int sum2 = 0;
-        int a = 0;
-        int b = 0;
+        int sum1 = arr[left];
+        int sum2 = arr[right];
 
-        while (left <= right) {
-            if()
+        while (left < right) {
+            if (sum1 < sum2) {
+                sum1 += arr[left];
+                left++;
+            } else {
+                sum2 += arr[right];
+                right--;
+            }
         }
-        System.out.println(a + " " + b);
+        System.out.println((left - 1) + " " + (n - left + 1));
+        sc.close();
     }
 }
